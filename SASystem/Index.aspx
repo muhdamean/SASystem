@@ -196,7 +196,7 @@
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
-              <h2 class="text-black text-uppercase section-title">Our Leadership</h2>
+              <h2 class="text-black text-uppercase section-title">Our Leadership kkkkk</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis, eius, eos consectetur consequuntur sit. Aut, perspiciatis, reprehenderit.</p>
           </div>
         </div>
