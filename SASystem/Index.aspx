@@ -18,7 +18,7 @@
       </div>
       <div>
         <h2>Free Education</h2>
-        <p>Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut praesentium magnam</p>
+        <p>Accusantium dignissimos voluptas rem consequatur blanditiis error ratione  illo sit quasi ut praeseuhghhntium magnam</p>
       </div>
     </div>
 
