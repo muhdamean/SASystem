@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="200lvl.jpg" />
+    <Content Include="applicant.aspx" />
     <Content Include="admin\add-user.aspx" />
     <Content Include="admin\Index.aspx" />
     <Content Include="admin\users.aspx" />
@@ -179,7 +181,171 @@
     <Content Include="fonts\icomoon\fonts\icomoon.svg" />
     <Content Include="fonts\icomoon\Read Me.txt" />
     <Content Include="fonts\icomoon\style.css" />
+    <Content Include="foundation-master\css\aos.css" />
+    <Content Include="foundation-master\css\bootstrap-datepicker.css" />
+    <Content Include="foundation-master\css\bootstrap.min.css" />
+    <Content Include="foundation-master\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="foundation-master\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="foundation-master\css\bootstrap\bootstrap.css" />
+    <Content Include="foundation-master\css\jquery-ui.css" />
+    <Content Include="foundation-master\css\magnific-popup.css" />
+    <Content Include="foundation-master\css\mediaelementplayer.css" />
+    <Content Include="foundation-master\css\owl.carousel.min.css" />
+    <Content Include="foundation-master\css\owl.theme.default.min.css" />
+    <Content Include="foundation-master\css\style.css" />
+    <Content Include="foundation-master\fonts\flaticon\backup.txt" />
+    <Content Include="foundation-master\fonts\flaticon\font\flaticon.css" />
+    <Content Include="foundation-master\fonts\flaticon\font\flaticon.html" />
+    <Content Include="foundation-master\fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="foundation-master\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="foundation-master\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="foundation-master\fonts\icomoon\demo.html" />
+    <Content Include="foundation-master\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="foundation-master\fonts\icomoon\Read Me.txt" />
+    <Content Include="foundation-master\fonts\icomoon\style.css" />
+    <Content Include="foundation-master\images\ac-nc-67336.svg" />
+    <Content Include="foundation-master\images\ben-white-998822-unsplash.jpg" />
+    <Content Include="foundation-master\images\creyf-s.svg" />
+    <Content Include="foundation-master\images\hero_1.jpg" />
+    <Content Include="foundation-master\images\hero_1_no-text.jpg" />
+    <Content Include="foundation-master\images\hero_2.jpg" />
+    <Content Include="foundation-master\images\hero_2_no-text.jpg" />
+    <Content Include="foundation-master\images\img_1.jpg" />
+    <Content Include="foundation-master\images\img_2.jpg" />
+    <Content Include="foundation-master\images\img_3.jpg" />
+    <Content Include="foundation-master\images\person_1.jpg" />
+    <Content Include="foundation-master\images\person_2.jpg" />
+    <Content Include="foundation-master\images\person_3.jpg" />
+    <Content Include="foundation-master\images\person_4.jpg" />
+    <Content Include="foundation-master\images\person_5.jpg" />
+    <Content Include="foundation-master\images\showa-3.svg" />
+    <Content Include="foundation-master\images\trimble-2.svg" />
+    <Content Include="foundation-master\index.html" />
+    <Content Include="foundation-master\js\aos.js" />
+    <Content Include="foundation-master\js\bootstrap-datepicker.min.js" />
+    <Content Include="foundation-master\js\bootstrap.min.js" />
+    <Content Include="foundation-master\js\jquery-3.3.1.min.js" />
+    <Content Include="foundation-master\js\jquery-migrate-3.0.1.min.js" />
+    <Content Include="foundation-master\js\jquery-ui.js" />
+    <Content Include="foundation-master\js\jquery.animateNumber.min.js" />
+    <Content Include="foundation-master\js\jquery.countdown.min.js" />
+    <Content Include="foundation-master\js\jquery.magnific-popup.min.js" />
+    <Content Include="foundation-master\js\jquery.stellar.min.js" />
+    <Content Include="foundation-master\js\jquery.sticky.js" />
+    <Content Include="foundation-master\js\jquery.waypoints.min.js" />
+    <Content Include="foundation-master\js\main.js" />
+    <Content Include="foundation-master\js\mediaelement-and-player.min.js" />
+    <Content Include="foundation-master\js\owl.carousel.min.js" />
+    <Content Include="foundation-master\js\popper.min.js" />
+    <Content Include="foundation-master\js\slick.min.js" />
+    <Content Include="foundation-master\js\typed.js" />
+    <Content Include="foundation-master\single.html" />
     <Content Include="Global.asax" />
+    <Content Include="guruable2-01.0\accordion.html" />
+    <Content Include="guruable2-01.0\assets\css\animate.css\css\animate.css" />
+    <Content Include="guruable2-01.0\assets\css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="guruable2-01.0\assets\css\jquery.mCustomScrollbar.css" />
+    <Content Include="guruable2-01.0\assets\css\morris.js\css\morris.css" />
+    <Content Include="guruable2-01.0\assets\css\style.css" />
+    <Content Include="guruable2-01.0\assets\icon\icofont\css\icofont.css" />
+    <Content Include="guruable2-01.0\assets\icon\icofont\fonts\icofont.svg" />
+    <Content Include="guruable2-01.0\assets\icon\themify-icons\fonts\themify.svg" />
+    <Content Include="guruable2-01.0\assets\icon\themify-icons\themify-icons.css" />
+    <Content Include="guruable2-01.0\assets\images\auth\logo-dark.png" />
+    <Content Include="guruable2-01.0\assets\images\auth\Logo-small-bottom.png" />
+    <Content Include="guruable2-01.0\assets\images\auth\logo.png" />
+    <Content Include="guruable2-01.0\assets\images\avatar-1.jpg" />
+    <Content Include="guruable2-01.0\assets\images\avatar-2.jpg" />
+    <Content Include="guruable2-01.0\assets\images\avatar-3.jpg" />
+    <Content Include="guruable2-01.0\assets\images\avatar-4.jpg" />
+    <Content Include="guruable2-01.0\assets\images\bg.jpg" />
+    <Content Include="guruable2-01.0\assets\images\favicon.ico" />
+    <Content Include="guruable2-01.0\assets\images\flags\ENGLISH.jpg" />
+    <Content Include="guruable2-01.0\assets\images\flags\FRANCE.jpg" />
+    <Content Include="guruable2-01.0\assets\images\flags\PORTO.jpg" />
+    <Content Include="guruable2-01.0\assets\images\flags\SPAIN.jpg" />
+    <Content Include="guruable2-01.0\assets\images\logo.png" />
+    <Content Include="guruable2-01.0\assets\images\mega-menu\01.jpg" />
+    <Content Include="guruable2-01.0\assets\images\mega-menu\02.jpg" />
+    <Content Include="guruable2-01.0\assets\images\mega-menu\03.jpg" />
+    <Content Include="guruable2-01.0\assets\images\mega-menu\04.jpg" />
+    <Content Include="guruable2-01.0\assets\images\mega-menu\05.jpg" />
+    <Content Include="guruable2-01.0\assets\images\mega-menu\06.jpg" />
+    <Content Include="guruable2-01.0\assets\images\pattern2.jpg" />
+    <Content Include="guruable2-01.0\assets\images\user.png" />
+    <Content Include="guruable2-01.0\assets\js\bootstrap-growl.min.js" />
+    <Content Include="guruable2-01.0\assets\js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="guruable2-01.0\assets\js\classie.js" />
+    <Content Include="guruable2-01.0\assets\js\classie\classie.js" />
+    <Content Include="guruable2-01.0\assets\js\common-pages.js" />
+    <Content Include="guruable2-01.0\assets\js\demo-12.js" />
+    <Content Include="guruable2-01.0\assets\js\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="guruable2-01.0\assets\js\jquery-ui\jquery-ui.min.js" />
+    <Content Include="guruable2-01.0\assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="guruable2-01.0\assets\js\jquery.mousewheel.min.js" />
+    <Content Include="guruable2-01.0\assets\js\jquery\jquery.min.js" />
+    <Content Include="guruable2-01.0\assets\js\modernizr\css-scrollbars.js" />
+    <Content Include="guruable2-01.0\assets\js\modernizr\modernizr.js" />
+    <Content Include="guruable2-01.0\assets\js\morris.js\morris.js" />
+    <Content Include="guruable2-01.0\assets\js\pcoded.min.js" />
+    <Content Include="guruable2-01.0\assets\js\popper.js\popper.min.js" />
+    <Content Include="guruable2-01.0\assets\js\raphael\raphael.min.js" />
+    <Content Include="guruable2-01.0\assets\js\script.js" />
+    <Content Include="guruable2-01.0\assets\js\script.min.js" />
+    <Content Include="guruable2-01.0\assets\js\SmoothScroll.js" />
+    <Content Include="guruable2-01.0\assets\pages\accordion\accordion.js" />
+    <Content Include="guruable2-01.0\assets\pages\accordion\accordion.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\chart\morris\morris-custom-chart.js" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\amchart\css\amchart.css" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\amchart\css\export.css" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\amchart\js\amcharts.js" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\amchart\js\custom-amchart.js" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\amchart\js\export.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\amchart\js\images\dragIconRoundBig.svg" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\amchart\js\images\dragIconRoundBigH.svg" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\amchart\js\light.js" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\amchart\js\serial.js" />
+    <Content Include="guruable2-01.0\assets\pages\dashboard\custom-dashboard.js" />
+    <Content Include="guruable2-01.0\assets\pages\google-maps\gmaps.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\google-maps\jquery.gmaps.js" />
+    <Content Include="guruable2-01.0\assets\pages\icon-modal.js" />
+    <Content Include="guruable2-01.0\assets\pages\notification\notification.css" />
+    <Content Include="guruable2-01.0\assets\pages\notification\notification.js" />
+    <Content Include="guruable2-01.0\assets\pages\todo\todo.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\amcharts.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\amcharts.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\ammap.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\ammap.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\continentsLow.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\continentsLow.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\gauge.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\gauge.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\light.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\light.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\pie.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\pie.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\serial.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\serial.min.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\worldLow.js" />
+    <Content Include="guruable2-01.0\assets\pages\widget\amchart\worldLow.min.js" />
+    <Content Include="guruable2-01.0\auth-normal-sign-in.html" />
+    <Content Include="guruable2-01.0\auth-sign-up.html" />
+    <Content Include="guruable2-01.0\breadcrumb.html" />
+    <Content Include="guruable2-01.0\bs-basic-table.html" />
+    <Content Include="guruable2-01.0\button.html" />
+    <Content Include="guruable2-01.0\chart.html" />
+    <Content Include="guruable2-01.0\color.html" />
+    <Content Include="guruable2-01.0\form-elements-component.html" />
+    <Content Include="guruable2-01.0\icon-themify.html" />
+    <Content Include="guruable2-01.0\index.html" />
+    <Content Include="guruable2-01.0\label-badge.html" />
+    <Content Include="guruable2-01.0\map-google.html" />
+    <Content Include="guruable2-01.0\notification.html" />
+    <Content Include="guruable2-01.0\progress-bar.html" />
+    <Content Include="guruable2-01.0\sample-page.html" />
+    <Content Include="guruable2-01.0\tabs.html" />
+    <Content Include="guruable2-01.0\tooltip.html" />
+    <Content Include="guruable2-01.0\typography.html" />
     <Content Include="images\abdullahi.jpeg" />
     <Content Include="images\ac-nc-67336.svg" />
     <Content Include="images\ben-white-998822-unsplash.jpg" />
@@ -224,9 +390,15 @@
     <Content Include="js\popper.min.js" />
     <Content Include="js\slick.min.js" />
     <Content Include="js\typed.js" />
+    <Content Include="passport.JPG" />
     <Content Include="login.aspx" />
     <Content Include="myapplications.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="schools.aspx" />
+    <Content Include="screening.aspx" />
+    <Content Include="sessions.aspx" />
+    <Content Include="shortlisted.aspx" />
+    <Content Include="viewRegistration.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -250,6 +422,13 @@
     </Compile>
     <Compile Include="admin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="applicant.aspx.cs">
+      <DependentUpon>applicant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="applicant.aspx.designer.cs">
+      <DependentUpon>applicant.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\users.aspx.cs">
       <DependentUpon>users.aspx</DependentUpon>
@@ -298,12 +477,47 @@
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="schools.aspx.cs">
+      <DependentUpon>schools.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="schools.aspx.designer.cs">
+      <DependentUpon>schools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="screening.aspx.cs">
+      <DependentUpon>screening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="screening.aspx.designer.cs">
+      <DependentUpon>screening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sessions.aspx.cs">
+      <DependentUpon>sessions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sessions.aspx.designer.cs">
+      <DependentUpon>sessions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shortlisted.aspx.cs">
+      <DependentUpon>shortlisted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shortlisted.aspx.designer.cs">
+      <DependentUpon>shortlisted.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="viewRegistration.aspx.cs">
+      <DependentUpon>viewRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewRegistration.aspx.designer.cs">
+      <DependentUpon>viewRegistration.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -328,6 +542,115 @@
     <Content Include="assets\icon\themify-icons\fonts\themify.ttf" />
     <Content Include="assets\icon\themify-icons\fonts\themify.woff" />
     <Content Include="Admin.Master" />
+    <Content Include="guruable2-01.0\assets\icon\icofont\fonts\icofont.eot" />
+    <Content Include="guruable2-01.0\assets\icon\icofont\fonts\icofont.ttf" />
+    <Content Include="guruable2-01.0\assets\icon\icofont\fonts\icofont.woff" />
+    <Content Include="guruable2-01.0\assets\icon\themify-icons\fonts\themify.eot" />
+    <Content Include="guruable2-01.0\assets\icon\themify-icons\fonts\themify.ttf" />
+    <Content Include="guruable2-01.0\assets\icon\themify-icons\fonts\themify.woff" />
+    <Content Include="foundation-master\css\.DS_Store" />
+    <Content Include="foundation-master\css\bootstrap.min.css.map" />
+    <Content Include="foundation-master\fonts\.DS_Store" />
+    <Content Include="foundation-master\fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="foundation-master\fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="foundation-master\fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="foundation-master\fonts\flaticon\font\Flaticon.woff2" />
+    <Content Include="foundation-master\fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="foundation-master\fonts\flaticon\license\license.pdf" />
+    <Content Include="foundation-master\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="foundation-master\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="foundation-master\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="foundation-master\fonts\icomoon\selection.json" />
+    <Content Include="foundation-master\images\.DS_Store" />
+    <Content Include="foundation-master\scss\.DS_Store" />
+    <Content Include="foundation-master\scss\bootstrap\.DS_Store" />
+    <Content Include="foundation-master\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="foundation-master\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="foundation-master\scss\bootstrap\bootstrap.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="foundation-master\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="foundation-master\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_alert.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_badge.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_button-group.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_buttons.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_card.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_carousel.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_close.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_code.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_dropdown.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_forms.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_functions.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_grid.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_images.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_input-group.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_list-group.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_media.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_mixins.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_modal.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_nav.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_navbar.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_pagination.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_popover.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_print.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_progress.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_reboot.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_root.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_tables.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_tooltip.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_transitions.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_type.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_utilities.scss" />
+    <Content Include="foundation-master\scss\bootstrap\_variables.scss" />
+    <Content Include="foundation-master\scss\style.scss" />
+    <Content Include="foundation-master\scss\_site-base.scss" />
+    <Content Include="foundation-master\scss\_site-blocks.scss" />
+    <Content Include="foundation-master\scss\_site-navbar.scss" />
     <None Include="packages.config" />
     <Content Include="scss\.DS_Store" />
     <Content Include="scss\bootstrap\.DS_Store" />
