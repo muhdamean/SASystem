@@ -223,21 +223,21 @@
                             <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Applications</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li>
-                                    <a href="form-elements-component.html">
+                                    <a href="applicant.aspx">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>NA</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">New Applicants</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="bs-basic-table.html">
+                                    <a href="schools.aspx">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>SC</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Screening</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                  <li>
-                                    <a href="bs-basic-table.html">
+                                    <a href="shortlisted.aspx">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>SC</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Shortlisted</span>
                                         <span class="pcoded-mcaret"></span>
@@ -248,7 +248,7 @@
                             <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Others</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li>
-                                    <a href="form-elements-component.html">
+                                    <a href="sessions.aspx">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>AS</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Application Sessions</span>
                                         <span class="pcoded-mcaret"></span>
