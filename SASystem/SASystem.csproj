@@ -399,10 +399,6 @@
     <Content Include="login.aspx" />
     <Content Include="myapplications.aspx" />
     <Content Include="register.aspx" />
-    <Content Include="schools.aspx" />
-    <Content Include="screening.aspx" />
-    <Content Include="sessions.aspx" />
-    <Content Include="shortlisted.aspx" />
     <Content Include="viewRegistration.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -516,34 +512,6 @@
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="schools.aspx.cs">
-      <DependentUpon>schools.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="schools.aspx.designer.cs">
-      <DependentUpon>schools.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="screening.aspx.cs">
-      <DependentUpon>screening.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="screening.aspx.designer.cs">
-      <DependentUpon>screening.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="sessions.aspx.cs">
-      <DependentUpon>sessions.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="sessions.aspx.designer.cs">
-      <DependentUpon>sessions.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="shortlisted.aspx.cs">
-      <DependentUpon>shortlisted.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="shortlisted.aspx.designer.cs">
-      <DependentUpon>shortlisted.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
