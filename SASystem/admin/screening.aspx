@@ -44,7 +44,7 @@
     <!-- Pre-loader end -->
     <div id="pcoded" class="pcoded">
         <!-- Main-body start -->
-        <div class="page-wrapper">
+       
             <!-- Page-header end -->
 
             <!-- Page-body start -->
@@ -141,7 +141,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
         <!-- Main-body end -->
 
         <div id="styleSelector">

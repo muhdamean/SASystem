@@ -46,7 +46,7 @@
 
 
         <!-- Main-body start -->
-        <div class="page-wrapper">
+       
             <!-- Page-header start -->
             <div class="page-header card">
                 <div class="row align-items-end">
@@ -204,7 +204,7 @@
 
         <div id="styleSelector">
         </div>
-    </div>
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
 </asp:Content>
