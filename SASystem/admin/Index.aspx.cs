@@ -17,7 +17,7 @@ namespace SASystem.admin
         {
             if (!Page.IsPostBack)
             {
-
+                GetTotal();
             }
         }
         private void GetTotal()

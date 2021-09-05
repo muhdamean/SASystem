@@ -9,7 +9,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SASystem.admin
+namespace SASystem
 {
     public partial class screenings : System.Web.UI.Page
     {

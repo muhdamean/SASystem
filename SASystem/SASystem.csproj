@@ -1,4 +1,4 @@
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -68,6 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="200lvl.jpg" />
+    <Content Include="admin\applicant.aspx" />
+    <Content Include="admin\school.aspx" />
+    <Content Include="admin\screening.aspx" />
+    <Content Include="admin\sessions.aspx" />
+    <Content Include="admin\shortlisted.aspx" />
     <Content Include="applicant.aspx" />
     <Content Include="admin\add-user.aspx" />
     <Content Include="admin\Index.aspx" />
@@ -416,12 +421,47 @@
     <Compile Include="admin\add-user.aspx.designer.cs">
       <DependentUpon>add-user.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\applicant.aspx.cs">
+      <DependentUpon>applicant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\applicant.aspx.designer.cs">
+      <DependentUpon>applicant.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\school.aspx.cs">
+      <DependentUpon>school.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\school.aspx.designer.cs">
+      <DependentUpon>school.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\screening.aspx.cs">
+      <DependentUpon>screening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\screening.aspx.designer.cs">
+      <DependentUpon>screening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\sessions.aspx.cs">
+      <DependentUpon>sessions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\sessions.aspx.designer.cs">
+      <DependentUpon>sessions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\shortlisted.aspx.cs">
+      <DependentUpon>shortlisted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\shortlisted.aspx.designer.cs">
+      <DependentUpon>shortlisted.aspx</DependentUpon>
     </Compile>
     <Compile Include="applicant.aspx.cs">
       <DependentUpon>applicant.aspx</DependentUpon>

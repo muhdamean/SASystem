@@ -8,8 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SASystem.admin
-
+namespace SASystem
 {
     public partial class applicant : System.Web.UI.Page
     {

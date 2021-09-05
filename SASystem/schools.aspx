@@ -110,7 +110,7 @@
                                     <asp:BoundField DataField="schoolLGA" HeaderText="L G A" SortExpression="schoolLGA" />
                                 </Columns>
                             </asp:GridView>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SAScon %>" SelectCommand="SELECT [tblApplicationDetails].[schoolState],[tblApplicationDetails].[schoolLGA], [tblApplicationDetails].[SchoolCategory], tblSession.SessionName  FROM [tblApplicationDetails] inner join tblSession on tblSession.SessionName = tblApplicationDetails.AcademicSession where tblSession.status='1'
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sasyCon %>" SelectCommand="SELECT [tblApplicationDetails].[schoolState],[tblApplicationDetails].[schoolLGA], [tblApplicationDetails].[SchoolCategory], tblSession.SessionName  FROM [tblApplicationDetails] inner join tblSession on tblSession.SessionName = tblApplicationDetails.AcademicSession where tblSession.status='1'
 "></asp:SqlDataSource>
                         </div>
                     </div>

@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="shortlisted.aspx.cs" Inherits="SASystem.shortlisted" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="school.aspx.cs" Inherits="SASystem.admin.schools" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
-     <div class="theme-loader">
+    <div class="theme-loader">
         <div class="ball-scale">
             <div class='contain'>
                 <div class="ring">
@@ -55,8 +55,8 @@
                         <div class="page-header-title">
                             <i class="icofont icofont-table bg-c-blue"></i>
                             <div class="d-inline">
-                                <h4>Successful Applicants&nbsp(<asp:Label ID="lblsession" Font-Size="16px" runat="server" Text=""></asp:Label>)</h4>
-                                <span>List of Successful Applicants for Embursment</span>
+                                <h4>Chose Category to Commence Screening</h4>
+                                <span>Select to view schools under states</span>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                                 </li>
                                 <li class="breadcrumb-item"><a href="#!">Dashboard/</a>
                                 </li>
-                                <li class="breadcrumb-item"><a href="#!">Shortlisted</a>
+                                <li class="breadcrumb-item"><a href="#!">Schools</a>
                                 </li>
                             </ul>
                         </div>
@@ -85,9 +85,6 @@
                 <!-- Basic table card start -->
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-header-left">
-                             <asp:LinkButton ID="btnExport" OnClick="btnExport_Click" CssClass="btn btn-sm btn-primary pull-1" runat="server">Export Data</asp:LinkButton>
-                            </div>
                         <div class="card-header-right">
                             <ul class="list-unstyled card-option">
                                 <li><i class="icofont icofont-simple-left "></i></li>
@@ -101,41 +98,23 @@
 
                     <div class="card-block table-border-style">
                         <div class="table-responsive">
-                            <asp:GridView ID="GridView1" GridLines="None" CssClass="table" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" AllowPaging="True" PageSize="20" ClientIDMode="Static" EmptyDataText="NO APPLICANT HAS BEEN APPROVD FOR DISBURSEMENT THIS SESSION">
+                            <asp:GridView ID="GridView1" GridLines="None" CssClass="table" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" RowStyle-Wrap="true" Font-Size="14px" >
                                 <Columns>
                                     <asp:TemplateField HeaderText="#">
                                         <ItemTemplate>
-                                            <%# Container.DataItemIndex + 1 %>
-                                        </ItemTemplate>
-
-                                    </asp:TemplateField>
-                                    <asp:BoundField DataField="fullname" HeaderText="Full Name" SortExpression="fullname" />
-                                    <asp:BoundField DataField="Gender" HeaderText="Gender" SortExpression="Gender" />
-                                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                                    <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
-                                    <asp:BoundField DataField="State" HeaderText="State" SortExpression="State" />
-                                    <asp:BoundField DataField="LGA" HeaderText="LGA" SortExpression="LGA" />
-                                    <asp:BoundField DataField="AcademicSession" HeaderText="Session" SortExpression="AcademicSession" />
-                                    <asp:TemplateField>
-                                        <ItemTemplate>
-                                            <asp:Label ID="lblsession" Visible="false" runat="server" Text='<%#Eval("AcademicSession") %>'></asp:Label>
+                                            <%#Container.DataItemIndex+1 %>
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    <asp:BoundField DataField="JambNo" HeaderText="Jamb No" SortExpression="JambNo" ItemStyle-HorizontalAlign="Center" />
-                                    <asp:BoundField DataField="AdmissionNo" HeaderText="Admission No" SortExpression="AdmissionNo" ItemStyle-HorizontalAlign="Center" />
-                                    <asp:BoundField DataField="SchoolName" HeaderText="School Name" SortExpression="SchoolName" ItemStyle-HorizontalAlign="Center" />
-                                    <asp:TemplateField HeaderText="Status">
-                                        <ItemTemplate>
-                                            <asp:Label ID="lblStatus" CssClass='<%#Eval("ApplicationStatus").ToString() == "Successful"? "label label-success":"label label-warning" %>' Text='<%#Eval("ApplicationStatus").ToString() == "Successful"? "Successful":"Pending" %>' runat="server" ></asp:Label>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
+                                    <asp:HyperLinkField DataNavigateUrlFields="SchoolCategory,schoolState" DataTextField="SchoolCategory" DataNavigateUrlFormatString="screening.aspx?sc={0}&st={1}" HeaderText="School Category" />
+                                    <asp:BoundField DataField="schoolState" HeaderText="State" SortExpression="schoolState" />
+                                    <asp:BoundField DataField="schoolLGA" HeaderText="L G A" SortExpression="schoolLGA" />
                                 </Columns>
-                                <PagerStyle CssClass="dataTables_paginate" />
                             </asp:GridView>
-                            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:sasyCon %>" SelectCommand="select tblApplicationDetails.*, tblApplicants.*, tblApplicants.FName + ' '+ tblApplicants.MName + ' '+ tblApplicants.LName as 'fullname'  from tblApplicationDetails inner join tblApplicants on tblApplicationDetails.Email = tblApplicants.Email inner join tblSession on tblSession.SessionName = tblApplicationDetails.AcademicSession where ApplicationStatus = 'Successful' and tblSession.status='1'"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sasyCon %>" SelectCommand="SELECT [tblApplicationDetails].[schoolState],[tblApplicationDetails].[schoolLGA], [tblApplicationDetails].[SchoolCategory], tblSession.SessionName  FROM [tblApplicationDetails] inner join tblSession on tblSession.SessionName = tblApplicationDetails.AcademicSession where tblSession.status='1'
+"></asp:SqlDataSource>
                         </div>
                     </div>
-                </div>
+                    </div>
             </div>
         </div>
         <!-- Main-body end -->
