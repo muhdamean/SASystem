@@ -67,7 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\add-user.aspx" />
     <Content Include="admin\Index.aspx" />
+    <Content Include="admin\users.aspx" />
+    <Content Include="application-details.aspx" />
     <Content Include="assets\css\animate.css\css\animate.css" />
     <Content Include="assets\css\bootstrap\css\bootstrap.min.css" />
     <Content Include="assets\css\jquery.mCustomScrollbar.css" />
@@ -177,6 +180,7 @@
     <Content Include="fonts\icomoon\Read Me.txt" />
     <Content Include="fonts\icomoon\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="images\abdullahi.jpeg" />
     <Content Include="images\ac-nc-67336.svg" />
     <Content Include="images\ben-white-998822-unsplash.jpg" />
     <Content Include="images\child-school.jpg" />
@@ -189,11 +193,16 @@
     <Content Include="images\img_1.jpg" />
     <Content Include="images\img_2.jpg" />
     <Content Include="images\img_3.jpg" />
+    <Content Include="images\mall-idris.jpeg" />
+    <Content Include="images\mall-idris-2.jpeg" />
+    <Content Include="images\mall-idris-3.jpeg" />
+    <Content Include="images\mall-idris-4.jpeg" />
     <Content Include="images\person_1.jpg" />
     <Content Include="images\person_2.jpg" />
     <Content Include="images\person_3.jpg" />
     <Content Include="images\person_4.jpg" />
     <Content Include="images\person_5.jpg" />
+    <Content Include="images\shakur.jpg" />
     <Content Include="images\showa-3.svg" />
     <Content Include="images\trimble-2.svg" />
     <Content Include="Index.aspx" />
@@ -215,6 +224,8 @@
     <Content Include="js\popper.min.js" />
     <Content Include="js\slick.min.js" />
     <Content Include="js\typed.js" />
+    <Content Include="login.aspx" />
+    <Content Include="myapplications.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -226,6 +237,13 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="admin\add-user.aspx.cs">
+      <DependentUpon>add-user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add-user.aspx.designer.cs">
+      <DependentUpon>add-user.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -233,6 +251,21 @@
     <Compile Include="admin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="application-details.aspx.cs">
+      <DependentUpon>application-details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="application-details.aspx.designer.cs">
+      <DependentUpon>application-details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\PasswordHash.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -242,6 +275,20 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myapplications.aspx.cs">
+      <DependentUpon>myapplications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myapplications.aspx.designer.cs">
+      <DependentUpon>myapplications.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="register.aspx.cs">
@@ -380,7 +427,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

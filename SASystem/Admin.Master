@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="SCholarship">
+    <meta name="description" content="Scholarship">
     <meta name="keywords" content="Scholarship">
     <meta name="author" content="">
     <!-- Favicon icon -->
@@ -34,6 +34,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <!-- Pre-loader start -->
         <div class="theme-loader">
             <div class="ball-scale">
@@ -87,7 +88,8 @@
                                 <i class="ti-search"></i>
                             </a>
                             <a href="index.html">
-                                <img class="img-fluid" src="../assets/images/logo.png" alt="Theme-Logo" />
+                               <%-- <img class="img-fluid" src="../assets/images/logo.png" alt="Theme-Logo" />--%>
+                                Scholarship Application
                             </a>
                             <a class="mobile-options">
                                 <i class="ti-more"></i>
@@ -151,31 +153,11 @@
                                 </li>
                                 <li class="user-profile header-notification">
                                     <a href="#!">
-                                        <img src="../assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                        <span>John Doe</span>
+                                        <%--<img src="../assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">--%>
+                                        <span>Other</span>
                                         <i class="ti-angle-down"></i>
                                     </a>
-                                    <ul class="show-notification profile-notification">
-                                        <li>
-                                            <a href="#!">
-                                                <i class="ti-settings"></i>Settings
-                                        </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-user"></i>Profile
-                                        </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-email"></i>My Messages
-                                        </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-lock"></i>Lock Screen
-                                        </a>
-                                        </li>
+                                    <ul class="show-notification profile-notification">                                      
                                         <li>
                                             <a href="auth-normal-sign-in.html">
                                                 <i class="ti-layout-sidebar-left"></i>Logout
@@ -195,7 +177,7 @@
                             <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Welcome</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="active">
-                                    <a href="admin/Index.aspx">
+                                    <a href="Index.aspx">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
@@ -205,16 +187,9 @@
                             <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Admin</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="active">
-                                    <a href="index.html">
+                                    <a href="users.aspx">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Admin</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="index.html">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Admin</span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Admin Users</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>

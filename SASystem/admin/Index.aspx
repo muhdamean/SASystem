@@ -11,11 +11,13 @@
                     <div class="card-block-small">
                         <i class="icofont icofont-user-alt-7 bg-c-blue card1-icon"></i>
                         <span class="text-c-blue f-w-600">Application</span>
-                        <h4>105</h4>
+                        <h4>
+                            <label id="lblTotalApplication" runat="server"></label>
+                        </h4>
                         <div>
                             <span class="f-left m-t-10 text-muted">
                                 <i class="text-c-blue f-16 icofont icofont-warning m-r-10"></i>New Applications
-                                                            </span>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -27,11 +29,13 @@
                     <div class="card-block-small">
                         <i class="icofont icofont-ui-home bg-c-pink card1-icon"></i>
                         <span class="text-c-pink f-w-600">Screening</span>
-                        <h4>245</h4>
+                        <h4>
+                            <label id="lblTotalScreening" runat="server"></label>
+                        </h4>
                         <div>
                             <span class="f-left m-t-10 text-muted">
                                 <i class="text-c-pink f-16 icofont icofont-calendar m-r-10"></i>Under Screening
-                                                            </span>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -43,11 +47,12 @@
                     <div class="card-block-small">
                         <i class="icofont icofont-pay bg-c-green card1-icon"></i>
                         <span class="text-c-green f-w-600">Shortlisted</span>
-                        <h4>45</h4>
+                        <h4>
+                            <label id="lblTotalShortlist" runat="server"></label>
+                        </h4>
                         <div>
                             <span class="f-left m-t-10 text-muted">
-                                <i class="text-c-green f-16 icofont icofont-tag m-r-10"></i>Shortlisted Applicants
-                                                            </span>
+                                <i class="text-c-green f-16 icofont icofont-tag m-r-10"></i>Shortlisted Applicants</span>
                         </div>
                     </div>
                 </div>
@@ -59,21 +64,23 @@
                     <div class="card-block-small">
                         <i class="icofont icofont-user bg-c-yellow card1-icon"></i>
                         <span class="text-c-yellow f-w-600">Applicants</span>
-                        <h4>562</h4>
+                        <h4>
+                            <label id="lblTotalApplicants" runat="server"></label>
+                        </h4>
                         <div>
                             <span class="f-left m-t-10 text-muted">
                                 <i class="text-c-yellow f-16 icofont icofont-refresh m-r-10"></i>Total Applicants
-                                                            </span>
+                            </span>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
             <!-- card1 end -->
             <!-- Statestics Start -->
             <div class="col-md-12 col-xl-8">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Statestics</h5>
+                        <h5>Recent Applications</h5>
                         <div class="card-header-left ">
                         </div>
                         <div class="card-header-right">
@@ -87,7 +94,19 @@
                         </div>
                     </div>
                     <div class="card-block">
-                        <div id="statestics-chart" style="height: 517px;"></div>
+                        <div  style="height: 517px;"><%--id="statestics-chart"--%>
+                            <div class="table table-responsive">
+                                <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" RowStyle-CssClass="text-nowrap nowrap" HeaderStyle-Wrap="false" RowStyle-Wrap="false" CssClass="table table-responsive-sm " GridLines="Horizontal" AutoGenerateColumns="false">
+                                    <Columns>
+                                        <asp:BoundField DataField="Names" HeaderText="Name" />
+                                        <asp:BoundField DataField="Email" HeaderText="Email" />
+                                        <asp:BoundField DataField="Phone" HeaderText="Phone" />
+                                        <asp:BoundField DataField="YearAdmitted" HeaderText="Year Admitted" />
+                                    </Columns>
+                                </asp:GridView>
+                            </div>
+                        </div>
+                        <%--<div id="statestics-chart" style="height: 517px;"></div>--%>
                     </div>
                 </div>
             </div>
@@ -97,63 +116,75 @@
             <div class="col-md-12 col-xl-4">
                 <div class="card fb-card">
                     <div class="card-header">
-                        <i class="icofont icofont-social-facebook"></i>
+                        <i class="icofont icofont-user-alt-4"></i>
                         <div class="d-inline-block">
-                            <h5>facebook</h5>
-                            <span>blog page timeline</span>
+                            <h5>New Applicants</h5>
+                            <span>Male & Female</span>
                         </div>
                     </div>
                     <div class="card-block text-center">
                         <div class="row">
                             <div class="col-6 b-r-default">
-                                <h2>23</h2>
-                                <p class="text-muted">Active</p>
+                                <h2>
+                                    <label id="lblTotalNewMale" runat="server"></label>
+                                </h2>
+                                <p class="text-muted">Male</p>
                             </div>
                             <div class="col-6">
-                                <h2>23</h2>
-                                <p class="text-muted">Comment</p>
+                                <h2>
+                                    <label id="lblTotalNewFemale" runat="server"></label>
+                                </h2>
+                                <p class="text-muted">Female</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card dribble-card">
                     <div class="card-header">
-                        <i class="icofont icofont-social-dribbble"></i>
+                        <i class="icofont icofont-checked"></i>
                         <div class="d-inline-block">
-                            <h5>dribble</h5>
-                            <span>Product page analysis</span>
+                            <h5>Shortlisted Applicants</h5>
+                            <span>Male & Female</span>
                         </div>
                     </div>
                     <div class="card-block text-center">
                         <div class="row">
                             <div class="col-6 b-r-default">
-                                <h2>23</h2>
-                                <p class="text-muted">Live</p>
+                                <h2>
+                                    <label id="lblTotalShortlistedMale" runat="server"></label>
+                                </h2>
+                                <p class="text-muted">Male</p>
                             </div>
                             <div class="col-6">
-                                <h2>23</h2>
-                                <p class="text-muted">Message</p>
+                                <h2>
+                                    <label id="lblTotalShortlistedFemale" runat="server"></label>
+                                </h2>
+                                <p class="text-muted">Female</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card twitter-card">
                     <div class="card-header">
-                        <i class="icofont icofont-social-twitter"></i>
+                        <i class="icofont icofont-checked"></i>
                         <div class="d-inline-block">
-                            <h5>twitter</h5>
-                            <span>current new timeline</span>
+                            <h5>Pending Applicants</h5>
+                            <span>Male & Female</span>
                         </div>
                     </div>
                     <div class="card-block text-center">
                         <div class="row">
                             <div class="col-6 b-r-default">
-                                <h2>25</h2>
-                                <p class="text-muted">new tweet</p>
+                                <h2>
+                                    <label id="lblTotalPendingMale" runat="server"></label>
+                                </h2>
+                                <p class="text-muted">Male</p>
                             </div>
                             <div class="col-6">
-                                <h2>450+</h2>
-                                <p class="text-muted">Follower</p>
+                                <h2>
+                                    <label id="lblTotalPendingFemale" runat="server"></label>
+                                </h2>
+                                <p class="text-muted">Female</p>
                             </div>
                         </div>
                     </div>
@@ -162,7 +193,7 @@
 
             <!-- Email Sent End -->
             <!-- Data widget start -->
-            <div class="col-md-12 col-xl-6">
+            <%--   <div class="col-md-12 col-xl-6">
                 <div class="card project-task">
                     <div class="card-header">
                         <div class="card-header-left ">
@@ -360,13 +391,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--%>
             <!-- Data widget End -->
 
         </div>
     </div>
-  
-                                   
+
+
 
     <div id="styleSelector">
     </div>
