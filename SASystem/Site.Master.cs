@@ -48,7 +48,7 @@ namespace SASystem
                     if (sdr.Read())
                     {
 
-                        lblBlinkMsg.InnerText = sdr["SessionName"].ToString().Trim() + "application begins from " + Convert.ToDateTime(sdr["startDate"].ToString().Trim()).ToShortDateString() + " to " + Convert.ToDateTime(sdr["endDate"].ToString().Trim()).ToShortDateString();
+                        lblBlinkMsg.InnerText = sdr["SessionName"].ToString().Trim() + " application begins from " + Convert.ToDateTime(sdr["startDate"].ToString().Trim()).ToShortDateString() + " to " + Convert.ToDateTime(sdr["endDate"].ToString().Trim()).ToShortDateString();
                     }
                     else
                     {

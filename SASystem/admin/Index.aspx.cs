@@ -17,7 +17,7 @@ namespace SASystem.admin
         {
             if (!Page.IsPostBack)
             {
-
+                GetTotal();
             }
         }
         private void GetTotal()
@@ -44,27 +44,27 @@ namespace SASystem.admin
                     // new applicants male and female
                     cmd.Parameters.Clear();
                     cmd.CommandText = "select count(*) from vwApplications where Gender='Male'  and ApplicationStatus='New';";
-                    lblTotalNewMale.InnerText = "Total Hectares: " + cmd.ExecuteScalar().ToString();
+                    lblTotalNewMale.InnerText =  cmd.ExecuteScalar().ToString();
                    
                     cmd.Parameters.Clear();
                     cmd.CommandText = "select count(*) from vwApplications where Gender='Female' and ApplicationStatus='New';";
-                    lblTotalNewFemale.InnerText = "Cluster Hectares: " + cmd.ExecuteScalar().ToString();
+                    lblTotalNewFemale.InnerText =cmd.ExecuteScalar().ToString();
                     // shortlisted male and female
                     cmd.Parameters.Clear();
                     cmd.CommandText = "select count(*) from vwApplications where Gender='Male'  and ApplicationStatus='Successful';";
-                    lblTotalShortlistedFemale.InnerText = "Total Hectares: " + cmd.ExecuteScalar().ToString();
+                    lblTotalShortlistedFemale.InnerText = cmd.ExecuteScalar().ToString();
                    
                     cmd.Parameters.Clear();
                     cmd.CommandText = "select count(*) from vwApplications where Gender='Female'  and ApplicationStatus='Successful';";
-                    lblTotalShortlistedMale.InnerText = "Cluster Hectares: " + cmd.ExecuteScalar().ToString();
+                    lblTotalShortlistedMale.InnerText =  cmd.ExecuteScalar().ToString();
                     // pending male and female
                     cmd.Parameters.Clear();
                     cmd.CommandText = "select count(*) from vwApplications where Gender='Male'  and ApplicationStatus='Pending';";
-                    lblTotalPendingMale.InnerText = "Total Hectares: " + cmd.ExecuteScalar().ToString();
+                    lblTotalPendingMale.InnerText =  cmd.ExecuteScalar().ToString();
 
                     cmd.Parameters.Clear();
                     cmd.CommandText = "select count(*) from vwApplications where Gender='Female'  and ApplicationStatus='Pending';";
-                    lblTotalPendingFemale.InnerText = "Cluster Hectares: " + cmd.ExecuteScalar().ToString();
+                    lblTotalPendingFemale.InnerText =  cmd.ExecuteScalar().ToString();
                 }
             }
             catch (Exception)
