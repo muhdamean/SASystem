@@ -7,65 +7,83 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SASystem
+namespace SASystem.admin
 {
 
 
-    public partial class Site
+    public partial class users
     {
 
         /// <summary>
-        /// head control.
+        /// lblHide control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label lblHide;
 
         /// <summary>
-        /// form1 control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
-        /// lblBlinkMsg control.
+        /// textEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblBlinkMsg;
+        protected global::System.Web.UI.WebControls.TextBox textEmail;
 
         /// <summary>
-        /// Main control.
+        /// btnCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Main;
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnCancel;
 
         /// <summary>
-        /// hfA control.
+        /// btnSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfA;
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnSearch;
 
         /// <summary>
-        /// Footer control.
+        /// lblMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Footer;
+        protected global::System.Web.UI.WebControls.Label lblMsg;
+
+        /// <summary>
+        /// GridView2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView2;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }
